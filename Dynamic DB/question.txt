@@ -1,0 +1,39 @@
+Please find the assessment question attached below:
+
+Dynamic DB Crud Operation
+
+Feature Options:
+a. Add DB: Easily create a new database by providing a name for the desired database.
+b. Add Table: Define tables within your databases by specifying the database, table name, and field names along with their respective data types (e.g., Int, Varchar, DateTime, Text).
+c. Add Row: Insert records into your selected database and table by selecting the appropriate database, table, and columns for data entry.
+
+//dynamic db was assigned
+//completed Add DB Operation;
+
+Add DB Operation:
+Collect the user's input for the database name and dynamically create the specified database based on their input.
+    Inputs:
+        DB Name - Text
+
+//almost completed all the values are fetched from the db and also dynamically column also created
+
+//n2w
+//insert table into the backend and also the form is reload during clicking the add button so the need to stop load
+Add Table:
+Gather essential information from the user, such as the database name (selected from a dropdown displaying all user-defined databases), table name, and field names with their corresponding data types. Based on this input, create the table with the defined fields within the selected database.
+     Inputs:
+        DB Name - Select
+        Table Name - Select
+        Column (Text) and Column Type(Int, Varchar DateTime and Text Enough - Dropdown)
+
+//not worked in this part
+Add Row:
+Obtain user input, including the database name (selected from the available databases), the table name (displayed based on the selected database), and the column values for data entry. Store the provided records in the selected database and table
+      Inputs:
+         DB Name - Select
+         Table Name - Select
+         Table Column - Text
+
+The entire implementation should follow the OOPS and MVC Framework.
+Optimized and Standardized Code: Implementing clean, efficient, and standardized coding practices
+Design: Ensuring a well-designed user interface and user experience, considering aesthetics and usability.
