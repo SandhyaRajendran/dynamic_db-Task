@@ -17,7 +17,7 @@ Collect the user's input for the database name and dynamically create the specif
 
 //almost completed all the values are fetched from the db and also dynamically column also created
 
-//n2w
+//completed
 //insert table into the backend and also the form is reload during clicking the add button so the need to stop load
 Add Table:
 Gather essential information from the user, such as the database name (selected from a dropdown displaying all user-defined databases), table name, and field names with their corresponding data types. Based on this input, create the table with the defined fields within the selected database.
