@@ -1,7 +1,7 @@
 <?php
-
+//here i required the controller file to access the copy of controllers class
 require 'Controllers/controller.php';
-
+//this class is for creating the router class and send the request page
 class Router{
     public $router = [];
     public $controller;
@@ -54,6 +54,8 @@ class Router{
                     case "addColumn":
                         $this->controller->addColumn($_POST);
                         break;
+                    case "selectedDB":
+                        $this->controller->selectedDB($_POST['selectedDBName']);
                 }
             }
         }

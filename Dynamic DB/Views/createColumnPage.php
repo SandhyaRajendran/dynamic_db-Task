@@ -1,5 +1,6 @@
 <?php
 //var_dump($dbName);
+//var_dump($new);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,11 +11,11 @@
 </head>
 <body>
 <form action="/addColumn" method="post">
-<select name="dbName">
-    <?php foreach ($dbName as $db_name=>$val): ?>
-        <option><p><?php echo $val['Database'] ?></p></option>
-    <?php endforeach; ?>
-</select>
+    <select>
+        <?php foreach ($new as $db_name=>$tab): ?>
+        <option><?php echo $tab['0'] ?></option>
+        <?php endforeach; ?>
+    </select>
     <input type="submit">
 </form>
 </body>
