@@ -56,13 +56,13 @@ class userModal extends DatabaseConnection{
         $_SESSION['addColumnDbName'] = $columnValues['dbName'];
         var_dump($_SESSION['addColumnDbName']);
     }
-    public function selectedDB($selectedDB){
-        var_dump($selectedDB);
-        $_SESSION['selectedDBName'] = $selectedDB['selectedDBName'];
-    }
-
+//    public function selectedDB($selectedDB){
+//        var_dump($selectedDB);
+//        $_SESSION['selectedDBName'] = $selectedDB['selectedDBName'];
+//    }
+//
     public function fetchAllTables(){
-        $db =   $_SESSION['selectedDBName'];
+//        $db =   $_SESSION['selectedDBName'];
         $this->db->query("USE $db");
         $showTables =   $this->db->query('SHOW TABLES');
         $allTables = $showTables->fetchAll();

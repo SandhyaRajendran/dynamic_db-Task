@@ -63,7 +63,7 @@ class userController{
     public function columnPage(){
         try {
             $dbName =  $this->modal->showDatabases();
-            $new = $this->modal->fetchAllTables();
+//            $new = $this->modal->fetchAllTables();
             require 'Views/createColumnPage.php';
         }
         catch (Exception $e){
@@ -71,14 +71,14 @@ class userController{
         }
 
     }
-    public function addColumn($tables){
-        try{
-            $this->modal->addColumn($tables);
-        }
-        catch (Exception $e){
-            echo $e->getMessage();
-        }
-    }
+//    public function addColumn($tables){
+//        try{
+//            $this->modal->addColumn($tables);
+//        }
+//        catch (Exception $e){
+//            echo $e->getMessage();
+//        }
+//    }
     public function selectedDB($selectedDB){
         try {
             $this->modal->selectedDB($selectedDB);
